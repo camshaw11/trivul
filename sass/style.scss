@@ -1,0 +1,712 @@
+body {
+  // display: grid;
+  // grid-template-columns: 100%;
+  // // grid-template-rows: 800px;
+  // width: 100vw;
+  // height: 95vh;
+  // // grid-gap: 1em;
+  // max-width: 120em;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #2f4454;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
+.panel-one{
+    width: 600px;
+    height: 100vh;
+    background: #DA7B93;
+    // -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    // transition: width 0.6s;
+    -webkit-animation: mymove 1.5s ease-in-out forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove 1.5s ease-in-out forwards;
+    position: absolute;
+    // left: -20px;
+}
+
+// .panel:hover {
+//     width: 600px;
+// }
+
+.wrapper {
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+}
+.panel-two {
+    width: 570px;
+    height: 100vh;
+    background: #1C3334;
+    // -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    // transition: width 0.8s;
+    -webkit-animation: mymove 2s ease-in-out forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s ease-in-out forwards;
+    position: absolute;
+    // left: -40px;
+}
+
+// .panel-two:hover {
+//     width: 500px;
+// }
+#introBox {
+  width: 352px;
+  background-color: #2E151B; 
+  height: 602px;
+  position: absolute;
+  top: 180px;
+  left: 93px;
+}
+.panel-three {
+    width: 540px;
+    height: 100vh;
+    background: #376E6F;
+    // -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    // transition: width 0.8s;
+
+    -webkit-animation: mymoveTwo 8s ease-in-out  forwards; /* Safari 4.0 - 8.0 */
+    animation: mymoveTwo 8s ease-in-out forwards;
+    // animation-delay: 6s;
+    position: absolute;
+    // left: -40px;
+    // opacity: 0.1;
+}
+
+@keyframes mymove {
+    0%   {left: -550px;}
+    100% {left: 0px;}
+}
+@keyframes mymoveTwo {
+    0%   {left: -2200px;}
+    100% {left: 0px;}
+}
+.panel-back {
+    // width: 540px;
+    // height: 100vh;
+    // background: #376E6F;
+    // -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    // transition: width 0.8s;
+    -webkit-animation: mymoveBack 1s ease-in-out forwards; /* Safari 4.0 - 8.0 */
+    animation: mymoveBack 1s ease-in-out forwards;
+    position: absolute;
+    // left: -40px;
+}
+
+@keyframes mymoveBack {
+    0%   {left: 0px;}
+    100% {left: -510px;}
+}
+
+#particles-js {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  pointer-events:none;
+}
+header {
+  position: absolute;
+  z-index: 10000;
+  margin-left: 85px;
+  margin-top: 40px;
+}
+h1 {
+  z-index: 10000;
+  color: #DA7B93;
+  font-size: 80px;
+  letter-spacing: 28px;
+  padding-left: 20px;
+  // padding-right: 20px;
+  // width: 360px; 
+  margin: 0 auto;
+  margin-top: 20px;
+  // display: inline-block; 
+  text-align: center;
+  border: 2px solid #2E151B;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.introText {
+  font-size: 36px;
+  padding-top: 20px;
+  text-align: right;
+  letter-spacing: 24px;
+}
+
+#textTwo {
+  text-align: left;
+  margin-top: 140px;
+  // top: 400px;
+  // text-align: right;
+}
+h2 {
+  font-size: 18px;
+  color: #DA7B93;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 30px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+}
+
+form {
+  margin-top: 180px;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+  background-color: #2E151B;
+  margin-left: 93px;
+  margin-right: 95px;
+}
+
+#people-days {
+  margin-top: 5px;
+  margin-right: 200px;
+  padding-right: 0px;
+}
+
+input {
+  color: white;
+  font-size: 24px;
+  background-color: #376E6F;
+  border: none;
+  padding: 4px;
+}
+
+input:focus {
+    outline: none;
+    border:1px solid red;
+    box-shadow: 0 0 10px #DA7B93;
+}
+
+.set-width {
+  width: 321px;
+}
+
+.set-width-people {
+  background-color: #1C3334;
+  width: 40px;
+  padding-left: 12px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#input-space-from {
+  background-color: #1C3334;
+}
+#input-space-to {
+  margin-bottom: 5px;
+  width: 321px;
+}
+
+h3 {
+  color: #DA7B93;
+  margin: 0 auto;
+}
+
+.button-primary {
+    float: left;
+    background-color: #376E6F;
+    border: none;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0px;
+    margin-right: 30px;
+}
+
+.pulse {
+  margin:100px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #cca92c;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 1.5s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #DA7B93;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px #DA7B93;
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 #DA7B93;
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #DA7B93;
+    box-shadow: 0 0 0 0 #DA7B93;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 #DA7B93;
+      box-shadow: 0 0 0 0 #DA7B93;
+  }
+}
+
+#submitArrow {
+  color: #DA7B93;
+  font-size: 60px;
+  position: absolute;
+  width: 92px;
+  height: 161px;
+  top: 352px;
+  text-align: center;
+  border-radius: 0px;
+  right: 94px;
+  margin: 0 auto;
+  background-color: #2E151B;
+}
+
+#car-group {
+  margin-top: 5px;
+  background-color: #376E6F;
+  padding: 0px;
+  // margin-right: 80px;
+}
+
+.car {
+    border: none;
+    padding: 50px 87px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    background-color: #2E151B;
+
+}
+
+.car:hover {
+  background-color: #DA7B93;
+  -webkit-transition: background-color 0.8s ease-in-out;
+  -moz-transition: background-color 0.8s ease-in-out;
+  -o-transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
+}
+
+#calculations {
+  // width: 400px;
+  margin-top: 3px;
+  height: 135px;
+  background-color: #DA7B93;
+  margin-left: 93px;
+  margin-right: 95px;
+}
+
+#final-cost {
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 25px;
+  font-weight: bold;
+  color: #1C3334;
+}
+
+#hire-cost {
+  color: #DA7B93;
+  background-color: #1C3334;
+  padding-top: 5px;
+  padding-left: 22px;
+  margin-bottom: 5px;
+  // margin-left: 22px;
+  letter-spacing: 20px;
+}
+
+#over-cost {
+  color: #DA7B93;
+  background-color: #1C3334;
+  padding-top: 5px;
+  padding-left: 20px;
+  // margin-left: 20px;
+  letter-spacing: 20px;
+  margin-bottom: 5px;
+}
+
+#distanceKm {
+  color: #DA7B93;
+  background-color: #1C3334;
+  padding-top: 5px;
+  padding-left: 20px;
+  // margin-left: 20px;
+  letter-spacing: 12px;
+}
+
+button:focus {
+    outline: none;
+    border:1px solid #DA7B93;
+    box-shadow: 0 0 10px #DA7B93;
+}
+
+#motorbike {
+  padding: 15px;
+  width: 174px;
+  height: 130px;
+}
+
+#smartCar {
+  padding: 15px;
+  width: 174px;
+  height: 130px;
+}
+
+#largeCar {
+  padding: 15px;
+  width: 174px;
+  height: 130px;
+}
+
+#motorhome {
+  padding: 15px;
+  width: 174px;
+  height: 130px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  float: left;
+  // margin-left: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    margin-left: 700px;
+    left: 0;
+    top: 100px;
+    width: 40%; /* Full width */
+    height: 100%; /* Full height */
+    // overflow: auto; /* Enable scroll if needed */
+    // background-color: rgb(0,0,0); /* Fallback color */
+    // background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    // border: 1px solid #888; 
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.8s;
+    animation-name: animatetop;
+    animation-duration: 0.8s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #376E6F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2E151B;
+    color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #2E151B;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2E151B;
+    color: white;
+}
+.head-modal {
+  // width:100%;
+  border: none;
+  margin-top: 2px;
+  padding-left: 5px;
+  font-size: 3vw;
+}
+.modalPrice {
+  // background-color: #376E6F;
+  text-align: center;
+}
+.modalPrice2 {
+  // background-color: #376E6F;
+  text-align: center;
+}
+p {
+  color: #DA7B93;
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 28px;
+  font-size: 30px;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #376E6F;
+}
+
+/* On mouse-over, add a background color */
+.container:hover input ~ .checkmark {
+    background-color: #1C3334;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #376E6F;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.noOption {
+  display: none; 
+  margin-bottom: 3px;
+}
+
+#noOptionText {
+  background-color: #2E151B;
+  text-align: center;
+  letter-spacing: 20px;
+  padding: 10px;
+  padding-left: 25px;
+}
+
+@media only screen and (max-width: 1168px) {
+    #introBox {
+      left: 20px;
+    }
+    .panel-three {
+      width: 395px;
+    }
+    .panel-two {
+      width: 405px;
+    }
+    .panel-one {
+      width: 415px;
+    }
+    header {
+      margin-left: 14px;
+    }
+    fieldset {
+        margin-left: 20px;
+        margin-right: 160px;
+    }
+    #people-days {
+      margin-right: 260px;
+    }
+    #submitArrow {
+      right: 22px;
+    }
+    #smartCar {
+      margin-left: 1px;
+    }
+    #motorhome {
+      margin-left: 1px;
+    }
+    #calculations {
+      margin-left: 20px;
+      margin-right: 22px;
+    }
+    #car-group {
+      margin-right: 0px;
+    }
+    .modal {
+      margin-left: 438px;
+
+      .head-modal {
+        letter-spacing: 5px;
+      }
+
+      .modalPrice {
+        letter-spacing: 5px;
+      }
+      .modalPrice2 {
+        letter-spacing: 5px;
+      }
+      .modal-footer {
+
+      }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+  header {
+    margin-top: 0px;
+  }
+  form {
+    margin-top: 100px;
+  }
+  #submitArrow {
+    top: 254px;
+    height: 156px;
+    width: 97px;
+  }
+  #largeCar, #motorbike, #motorhome, #smartCar {
+    height: 100px;
+  }
+  img {
+    float: right;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  input {
+    font-size: 18px;
+  }
+  h1 {
+    margin-top: 15px;
+    font-size: 60px;
+    padding-right: 17px;
+    padding-left: 40px;
+  }
+  header {
+    margin-left: 14px;
+  }
+  .set-width-people {
+    padding-bottom: 3px;
+    padding-left: 11px;
+    font-size: 25px;
+  }
+  #textTwo {
+    padding-left: 20px;
+    margin-top: 160px;
+  }
+  #textOne {
+    padding-right: 0px;
+  }
+  #introBox {
+    top: 101px;
+  }
+  body {
+    overflow: scroll;
+  }
+  .panel-three {
+    height: 106vh;
+  }
+  .panel-two {
+    height: 106vh;
+  }
+  .panel-one {
+    height: 106vh;
+  }
+}
+
+@-moz-document url-prefix() {
+  #submitArrow {
+      top: 362px;
+      height: 172px;
+  }
+  #car-group {
+
+  }
+  #motorhome {
+      padding: 2px;
+      position: absolute;
+      margin-left: 4px;
+      padding-bottom: 0px;
+  }
+  #smartCar {
+      padding: 2px;
+  }
+  #motorbike {
+      padding: 2px;
+  }
+  #largeCar {
+      padding: 2px;
+  }
+}
+
+.mapboxgl-control-container {
+  display: none;
+}

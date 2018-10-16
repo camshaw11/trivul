@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>TRIVUL</title>
+
+    <!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Oxygen" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300">
+	<!-- normalize -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<!-- JQUERY -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- mapbox -->
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+	<!-- Tipr -->
+	<link rel="stylesheet" href="tipr/tipr.css">
+	<script src="tipr/tipr.min.js"></script>
+</head>
+<body>
+	
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.js'></script>
+	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.css' type='text/css' />
+	
+	<header>
+		<h1> TRIVUL </h1>
+	</header>
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.1/mapbox-gl-geocoder.min.js'></script>
+	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.1/mapbox-gl-geocoder.css' type='text/css' />
+	<div id="map"></div>
+	<div class="wrapper">
+		<div class="panel panel-one"></div>
+		<div class="panel panel-two">
+			<div id="introBox">
+				<h1 class="introText" id="textOne"> WELCOME TO TRIVUL. </h1>
+				<h1 class="introText" id="textTwo"> LETS SORT YOUR TRANSPORT IN NEW ZEALAND. </h1>
+			</div>
+		</div>
+ 		<div class="panel panel-three">
+			<div id="particles-js"></div>
+			<form id="form-travel" data-parsley-validate>
+				<fieldset>
+					<h2>FROM</h2>
+					<input type="text" id="input-space-from" class="tip" data-tip="Where are you leaving from?" name="from">
+					<br>
+					<h2>TO</h2>
+					<input type="text" id="input-space-to" class="tip set-width" data-mode="below" data-tip="What is your destination?" name="to">
+					<br>
+				</fieldset>
+
+				<fieldset id="people-days">
+
+					<h2>PEOPLE</h2>
+						<button type="button" id="subtract" class="button-primary"><h3>-</h3></button>
+							<input type="text" id="my-number" class="set-width-people" name="people" value="1">
+						<button type="button" id="add" class="button-primary"><h3>+</h3></button>
+
+					<h2>DAYS</h2>
+						<button type="button" id="subtract-days" class="button-primary"><h3>-</h3></button>
+							<input type="text" id="my-number-days" class="set-width-people" name="days" value="1">
+						<button type="button" id="add-days" class="button-primary"><h3>+</h3></button>
+				</fieldset>
+					<input type="submit" class="" id="submitArrow" value=">">
+				<fieldset id="car-group">
+					<button type="button" id="motorbike" class="car">
+						<label class="container">
+  							<input type="checkbox" class="checkbox" id="motorbikeCheck">
+  								<span class="checkmark"></span>
+						</label>
+						<img src="img/motorbike.png" alt="motorbike">
+					</button>
+					<button type="button" id="smartCar" class="car" alt="smartcar">
+						<label class="container">
+  							<input type="checkbox" class="checkbox" id="smartCarCheck">
+  								<span class="checkmark"></span>
+						</label>
+						<img src="img/smartcar.png" alt="smartcar">
+					</button>
+					<button type="button" id="largeCar" class="car">
+						<label class="container">
+  							<input type="checkbox" class="checkbox" id="largeCarCheck">
+  								<span class="checkmark"></span>
+						</label>
+						<img src="img/large-car.png" alt="large-car">
+					</button>
+					<button type="button" id="motorhome" class="car" alt="motorhome">
+						<label class="container">
+  							<input type="checkbox" class="checkbox" id="motorhomeCheck">
+  								<span class="checkmark"></span>
+						</label>
+						<img src="img/motorhome.png" alt="motorhome">
+					</button>
+					<span class ="noOption"><h2 id="noOptionText"></h2> </span>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <div class="modal-header">
+					      <span class="close">&times;</span>
+					      <h1 class="head-modal">MOTORBIKE</h1>
+					    </div>
+					    <div class="modal-body">
+					      <h2 class="modalPrice">$109 PER DAY</h2>
+					      <h2 class="modalPrice2">3.7L/100KM</h2>
+					    </div>
+					    <div class="modal-footer">
+					      <!-- <h3>Modal Footer</h3> -->
+					      <img id="photoTransport" src="img/motorbike.png" alt="motorbike">
+					    </div>
+					  </div>
+					</div>
+				</fieldset>
+
+				<div id="calculations">
+					<h2 id="final-cost">COSTS</h2>
+					<h2 id="hire-cost">HIRE:</h2>
+					<h2 id="over-cost">FUEL:</h2>
+					<h2 id="distanceKm">DISTANCE:</h2>
+				</div>
+			</form>
+		</div> -->
+	</div>
+
+<!-- particles.js container -->
+
+<script src="js/transport.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
