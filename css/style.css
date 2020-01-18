@@ -118,6 +118,9 @@ h3 {
   text-align: center;
   }
 
+#submitArrow:hover {
+  color: white;
+}
 #car-group {
   margin-top: 5px;
   margin-right: 0px;
