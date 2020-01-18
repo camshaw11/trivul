@@ -20,30 +20,9 @@ body {
   width: 540px;
   height: 100vh;
   background: #376E6F;
-  /*-webkit-animation: mymove 0.5s ease-in-out  forwards;*/
-  /* Safari 4.0 - 8.0 */
-  /*animation: mymove 0.5s ease-in-out forwards;*/
   position: absolute; 
 }
 
-@keyframes mymove {
-  0% {
-    left: -550px; }
-
-  100% {
-    left: 0px; } }
-.panel-back {
-  -webkit-animation: mymoveBack 1s ease-in-out forwards;
-  /* Safari 4.0 - 8.0 */
-  animation: mymoveBack 1s ease-in-out forwards;
-  position: absolute; }
-
-@keyframes mymoveBack {
-  0% {
-    left: 0px; }
-
-  100% {
-    left: -510px; } }
 #particles-js {
   position: absolute;
   top: 0px;
@@ -64,11 +43,9 @@ h1 {
   color: #DA7B93;
   font-size: 4em;
   letter-spacing: 28px;
-  /*padding-left: 20px;*/
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
-  /*border: 2px solid #2E151B;*/
   font-family: 'Pathway Gothic One', sans-serif; }
 
 h2 {
@@ -81,7 +58,6 @@ h2 {
   padding-bottom: 5px; }
 
 form {
-  /*margin-top: 180px;*/
   text-align: left; 
 }
 
@@ -92,12 +68,6 @@ fieldset {
   margin-right: 95px;
   padding-left: 0px;
  }
-
-#people-days {
-/*  margin-top: 5px;
-  margin-right: 200px;
-  padding-right: 0px;*/
-   }
 
 input {
   color: white;
@@ -111,9 +81,6 @@ input:focus {
   border: 1px solid red;
   box-shadow: 0 0 10px #DA7B93; }
 
-/*.set-width {
-  width: 321px; }*/
-
 .set-width-people {
   width: 40px;
   text-align: center;
@@ -124,11 +91,6 @@ input:focus {
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */ }
-
-/*#input-space-to {
-  margin-bottom: 5px;
-  width: 321px; 
-}*/
 
 h3 {
   color: #DA7B93;
@@ -158,7 +120,6 @@ h3 {
 
 #car-group {
   margin-top: 5px;
-  /*margin-left: 0px;*/
   margin-right: 0px;
   background-color: #376E6F;
   padding: 0px; }
@@ -178,19 +139,8 @@ h3 {
   transition: background-color 0.8s ease-in-out; }
 
 #calculations {
-/*  margin-top: 3px;
-  height: 100px;
-  background-color: #DA7B93;*/
   margin-left: 93px;
   margin-right: 135px; }
-
-#final-cost {
-/*  text-align: center;
-  padding-top: 5px;
-  margin-left: 25px;
-  font-weight: bold;
-  color: #1C3334; */
-}
 
 #fuel-cost {
   color: #DA7B93;
@@ -218,26 +168,6 @@ button:focus {
   height: 110px;
   padding: 15px;
 }
-
-/*#motorbike {
-  padding: 15px;
-  width: 174px;
-  height: 130px; }
-
-#smartCar {
-  padding: 15px;
-  width: 174px;
-  height: 130px; }
-
-#largeCar {
-  padding: 15px;
-  width: 174px;
-  height: 130px; }
-
-#motorhome {
-  padding: 15px;
-  width: 174px;
-  height: 130px; }*/
 
 img {
   max-width: 100%;
